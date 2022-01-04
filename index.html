@@ -8,10 +8,6 @@
     <title>Document</title>
 
     <!-- font-awesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-        integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
     <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
 
     <!-- css -->
@@ -31,8 +27,21 @@
             </div>
             <audio src=""></audio>
 
+            <!-- progress bar setup-->
+            <div class="progressContainer" id="progressContainer">
+                <!-- progress time -->
+                <div class="progressDurationMeter">
+                    <div id="currentTime"></div>
+                    <div id="duration"></div>
+                </div>
 
-            <!-- controls -->
+                <!-- progress bar -->
+                <div class="progressDiv" id="progressDiv">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- music controls -->
             <div class="musicControls">
                 <i class="fas fa-backward" id="prev" title="Previous"></i>
                 <i class="fas fa-play mainButton" id="play" title="Play"></i>
